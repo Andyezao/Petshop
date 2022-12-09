@@ -1,22 +1,23 @@
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     text-align: center;
     padding: 0.7em;
     background-image: url('../img/fundo-topo.jpg');
 }
-header h1{
+
+header h1 {
     margin: 0;
 }
 
-nav{
+nav {
     margin: 0;
     text-align: center;
     padding: 15px 0px;
@@ -30,28 +31,30 @@ nav li {
     background-position: center right;
     padding-right: 27px;
     margin-right: 10px;
-    
+
 
 }
+
 nav a {
     text-decoration: none;
     color: #000;
 }
-nav a:hover{
-color: #d432be;
+
+nav a:hover {
+    color: #d432be;
 }
 
 .fundo-verde {
     background-color: #bdff9c;
 }
 
-.container{
+.container {
     width: 900px;
     margin: 0 auto;
     padding: 56px 0px;
 }
 
-.container .col{
+.container .col {
     width: 430px;
 }
 
@@ -60,14 +63,15 @@ color: #d432be;
     justify-content: space-between;
 }
 
-.texto-centralizado{
+.texto-centralizado {
     text-align: center;
 }
 
-.produto{
+.produto {
     width: 235px;
 }
-.produto figure{
+
+.produto figure {
     border: 1px solid #c4c4c4;
     background-color: #fff;
     margin: 0 0 15px 0;
@@ -81,7 +85,7 @@ color: #d432be;
     vertical-align: middle;
 }
 
-.btn-pata{
+.btn-pata {
     border: 1px solid #91e467;
     background-color: #d2fbbd;
     display: inline-block;
@@ -92,12 +96,12 @@ color: #d432be;
     cursor: pointer;
 }
 
-form{
+form {
     width: 380px;
 }
 
-form input, 
-form textarea{
+form input,
+form textarea {
     width: 100%;
     border: 1px solid #6dd432;
     border-radius: 5px;
@@ -107,21 +111,77 @@ form textarea{
 
 }
 
-iframe{
+iframe {
     width: 100%;
 
 }
 
-h2{
+h2 {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-#produtos .flex-container, #contato .flex-container{
+
+#produtos .flex-container,
+#contato .flex-container {
     margin-top: 43px;
 }
 
-.copyright{
+.copyright {
     text-align: right;
     font-family: 'Poor Story', cursive;
     font-size: 25px;
+}
+
+@media screen and (max-width:480px){
+    
+    body{
+        width: 480px;
+    }
+    .container{
+        width:480px;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .flex-container{
+        display:flex;
+        flex-direction: column;
+        padding: 0 auto;
+        margin: 0 auto;
+        text-align: ;
+        
+    }
+    h2{
+        text-align: center;
+        margin-top: -28px;
+    }
+    p{
+        text-align: center;
+        margin-top: -5px;
+    }
+    .col{
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .produtos{
+        margin: 0 auto;
+    }
+ 
+    h3{
+        text-align: center;
+    }
+    
+    .btn-pata{
+        text-align: center;
+        margin:10px 10px 10px 55px;  
+    }
+   
+    footer{
+        width: 480px;
+        margin-top: 0;
+        margin-left: 0 auto;
+    }
+
+   
 }
